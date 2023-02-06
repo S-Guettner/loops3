@@ -9,8 +9,9 @@ const textSeperate = () => {
     }
 }   
 const order = () => {
-    for(let i = 0; i < textArr.length; i++)
-    textArr[i]=` ${textArr[i]} - ${i} of ${textArr.length}} `
+    for(let i = 0; i < textArr.length; i++){
+    textArr[i]=` ${textArr[i]} - ${i + 1} of ${textArr.length}`}
+    console.log(textArr)
 }
 textSeperate()
 order()
